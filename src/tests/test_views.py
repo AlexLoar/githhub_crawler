@@ -4,9 +4,9 @@ from fastapi.testclient import TestClient
 import requests
 from requests.exceptions import ProxyError
 
-from src.exceptions import CrawlerException
-from src.requester import Requester
-from src.views import app
+from exceptions import CrawlerException
+from requester import Requester
+from views import app
 
 client = TestClient(app)
 
