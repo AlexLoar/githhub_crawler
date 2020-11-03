@@ -4,7 +4,7 @@ import logging
 
 from bs4 import BeautifulSoup
 
-from src.requester import Requester
+from requester import Requester
 
 logging.basicConfig(filename='../crawler.log',
                     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -35,7 +35,7 @@ class GitHubCrawler:
 
     @staticmethod
     def _set_proxies(proxies: list) -> dict:
-        return {'https': random.choice(proxies)}
+        return {'http': random.choice(proxies)}
 
     @staticmethod
     def _process_response(response: str) -> list:

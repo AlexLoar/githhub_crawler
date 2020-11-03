@@ -1,7 +1,7 @@
 import requests
 from requests.exceptions import ProxyError
 
-from src.exceptions import CrawlerException
+from exceptions import CrawlerException
 
 
 class Requester:

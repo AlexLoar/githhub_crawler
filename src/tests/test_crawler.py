@@ -1,10 +1,10 @@
 from unittest import mock
 
-from src.crawler import GitHubCrawler
-from src.requester import Requester
+from crawler import GitHubCrawler
+from requester import Requester
 
 
-@mock.patch('src.crawler.logging')
+@mock.patch('crawler.logging')
 @mock.patch.object(Requester, '_request')
 def test_search_when_malformed_github_response_log_error(mock_requests, mock_logging):
     with open('tests/fixtures/repositories_malformed_response.txt', 'r') as file:
