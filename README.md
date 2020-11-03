@@ -7,8 +7,11 @@ It consists of a single endpoint created with [FastAPI](https://fastapi.tiangolo
 ### Usage
 To use this crawler, just make use of the Makefile to run the main commands:
 
-Launch the server
-`make up`
+Run server
+`make up
+
+Stop server
+`make down`
 
 Run the tests
 `make test`
