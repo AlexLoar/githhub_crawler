@@ -1,5 +1,11 @@
-up:
-	uvicorn src.views:app --reload --workers 2 --host 0.0.0.0 --port 8000
+up:  # Start container
+	docker-compose -f docker-compose.yml up
 
-test:
+down:  # Stop running container
+	docker-compose -f docker-compose.yml down
+
+build:  # Build container
+	docker-compose -f docker-compose.yml build
+
+test:  # Run tests
 	pytest -vv

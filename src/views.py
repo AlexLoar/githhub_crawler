@@ -4,8 +4,8 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from src.crawler import GitHubCrawler
-from src.exceptions import CrawlerException
+from crawler import GitHubCrawler
+from exceptions import CrawlerException
 
 
 class TypeEnum(str, Enum):
